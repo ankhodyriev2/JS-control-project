@@ -1,19 +1,17 @@
-// На странице user-details.html:
-// 4 Вивести всю, без виключення, інформацію про об'єкт user на який клікнули
-// 5 Додати кнопку "post of current user", при кліку на яку, з'являються title всіх постів поточного юзера
-// (для получения постов используйте эндпоинт https://jsonplaceholder.typicode.com/users/USER_ID/posts)
-// 6 Каждому посту додати кнопку/посилання, при кліку на яку відбувається перехід на сторінку post-details.html, котра має детальну інфу про поточний пост.
+//На странице user-details.html:
+// // 4 Вивести всю, без виключення, інформацію про об'єкт user на який клікнули
+// // 5 Додати кнопку "post of current user", при кліку на яку, з'являються title всіх постів поточного юзера
+// // (для получения постов используйте эндпоинт https://jsonplaceholder.typicode.com/users/USER_ID/posts)
+// // 6 Каждому посту додати кнопку/посилання, при кліку на яку відбувається перехід на сторінку post-details.html, котра має детальну інфу про поточний пост.
 
-//Дістаєм ключі для кожного юзера
 const userId = new URL(location.href).searchParams.get('userId');
 
 const foo = async () => {
-    const json = await fetch(`http://jsonplaceholder.typicode.com/users/${userId}`);
+    const json = await fetch(`https://jsonplaceholder.typicode.com/users/${userId}`);
     const user = await json.json();
     console.log(userId);
 
     const wrap = document.getElementById('wrap');
-
     const ul = document.createElement('ul');
     const id = document.createElement('li');
     const username = document.createElement('li');
@@ -53,22 +51,12 @@ const foo = async () => {
     ul.append(id, username, email, street, suite, city, zipcode, lat, lng, phone, website, companyName, catchPhrase, bs, button);
     wrap.appendChild(ul);
 
-
     button.onclick = function () {
-        location.href = `https://jsonplaceholder.typicode.com/posts?userId=1`;}
-
+        location.href =
+            button.onclick = function () {
+                location.href = `../title/title.html?userId=${user.id}`;
+            }
+    }
 }
+
 void foo();
-
-
-
-
-
-//Робимо запит з динамічною userId
-    // This will return all the posts that belong to the first user
-  //  fetch('https://jsonplaceholder.typicode.com/posts?userId=1')
-   //     .then((response) => response.json())
-    //    .then((json) => console.log(json));
-
-// 5 Додати кнопку "post of current user", при кліку на яку, з'являються title всіх постів поточного юзера
-// (для получения постов используйте эндпоинт https://jsonplaceholder.typicode.com/users/USER_ID/posts)
