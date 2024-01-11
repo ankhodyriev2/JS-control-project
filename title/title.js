@@ -9,11 +9,6 @@ const foo = async () => {
     const users = await json.json();
     console.log(users);
 
-//fetch(`https://jsonplaceholder.typicode.com/posts?userId=${userId}`)
-    //   .then((response) => response.json())
-    //   .then((json) => console.log(json));
-   //  const users = await json.json();
-
     const wrap = document.getElementById('wrap');
 
     for (const user of users) {
@@ -21,10 +16,14 @@ const foo = async () => {
         const button = document.createElement('button');
 
         div.innerText = `${user.id} - ${user.title}`;
-        button.innerText = 'post details';
+        button.innerText = 'comments';
 
         div.appendChild(button);
         wrap.appendChild(div);
+
+        button.onclick = function () {
+            location.href = `../post-details/post-details.html?postId=${user.id}`;
+        }
     }
 }
 void foo()
