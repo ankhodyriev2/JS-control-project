@@ -1,5 +1,6 @@
 /* post-details.html - блок з інфою про пост зверху. Коментарі - по 4 в ряд */
 h4{
+    width: 100vw;
     display: flex;
     box-sizing: border-box;
     justify-content: stretch;
