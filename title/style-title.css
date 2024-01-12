@@ -17,4 +17,6 @@ div {
     margin: 0 5px;
     background: aquamarine;
     border: 1mm ridge rgba(211, 220, 50, 6);
+    margin-top: 1%;
+    margin-bottom: 1%;
 }

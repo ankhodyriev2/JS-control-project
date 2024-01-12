@@ -14,6 +14,7 @@ ul {
     flex: 1 0 20%;
     box-sizing: border-box;
     border: 1mm ridge rgba(211, 220, 50, 6);
+    margin-left: 0.5%;
 
 }
 
