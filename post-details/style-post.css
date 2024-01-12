@@ -8,5 +8,17 @@ h4{
 ul {
     display: flex;
     flex-direction: column;
+    flex: 1 0 20%;
+    box-sizing: border-box;
+
+}
+
+#wrap{
+    width: 100vw;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    flex-wrap: wrap;
+
 }
 
