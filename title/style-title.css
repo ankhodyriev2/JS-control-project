@@ -13,6 +13,8 @@ div {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: stretch;
-    justify-content: flex-end;
+    justify-content: space-between;
     margin: 0 5px;
+    background: aquamarine;
+    border: 1mm ridge rgba(211, 220, 50, 6);
 }

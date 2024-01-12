@@ -3,7 +3,9 @@ h4{
     width: 100vw;
     display: flex;
     box-sizing: border-box;
-    justify-content: stretch;
+    justify-content: center;
+    background: aquamarine;
+    border: 1mm ridge rgba(211, 220, 50, 6);
 }
 
 ul {
@@ -11,11 +13,12 @@ ul {
     flex-direction: column;
     flex: 1 0 20%;
     box-sizing: border-box;
+    border: 1mm ridge rgba(211, 220, 50, 6);
 
 }
 
 #wrap{
-    width: 100vw;
+    width: 98vw;
     display: flex;
     box-sizing: border-box;
     flex-direction: row;
