@@ -1,0 +1,12 @@
+/* post-details.html - блок з інфою про пост зверху. Коментарі - по 4 в ряд */
+h4{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: stretch;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+}
+

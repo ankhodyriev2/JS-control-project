@@ -1,0 +1,18 @@
+/*блоки з короткою іфною про post - в ряд по 5 */
+
+#wrap{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+}
+
+div {
+    display: flex;
+    flex: 1 0 18%;
+    box-sizing: border-box;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: flex-end;
+    margin: 0 5px;
+}

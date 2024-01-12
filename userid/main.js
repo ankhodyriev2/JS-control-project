@@ -22,8 +22,8 @@
 // Всі елементи котрі характеризують users, posts, comments візуалізувати, так, щоб було видно що це блоки (дати фон. марджини і тд)
 
 const foo = async () => {
-    const json = await fetch('https://jsonplaceholder.typicode.com/users');
-    const users = await json.json();
+    const response = await fetch('https://jsonplaceholder.typicode.com/users');
+    const users = await response.json();
     console.log(users)
     const wrap = document.getElementById('wrap');
 

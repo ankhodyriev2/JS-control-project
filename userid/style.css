@@ -1,15 +1,18 @@
+/*index.html - всі блоки з user - по 2 в рядок. кнопки/аосилвння розташувати під інформацією про user.*/
 #wrap {
-    width: 350px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;}
+    align-items: center;
+}
 
 
 div {
     display: flex;
+    flex: 1 0 40%;
+    box-sizing: border-box;
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: stretch;
+    margin: 0 5px;
 }
