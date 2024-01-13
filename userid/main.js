@@ -31,7 +31,7 @@ const foo = async () => {
         const div = document.createElement('div');
         const button = document.createElement('button');
 
-        div.innerText = `${user.id} - ${user.name}`;
+        div.innerText = `ID:${user.id} Name:${user.name}`;
         button.innerText = 'details';
 
         div.appendChild(button);

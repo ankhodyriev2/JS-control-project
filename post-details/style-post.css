@@ -1,6 +1,15 @@
 /* post-details.html - блок з інфою про пост зверху. Коментарі - по 4 в ряд */
 h4{
-    width: 100vw;
+    width: 98vw;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    background: aquamarine;
+    border: 1mm ridge rgba(211, 220, 50, 6);
+}
+
+h5 {
+    width: 98vw;
     display: flex;
     box-sizing: border-box;
     justify-content: center;
@@ -15,7 +24,6 @@ ul {
     box-sizing: border-box;
     border: 1mm ridge rgba(211, 220, 50, 6);
     margin-left: 0.5%;
-
 }
 
 #wrap{
@@ -24,6 +32,5 @@ ul {
     box-sizing: border-box;
     flex-direction: row;
     flex-wrap: wrap;
-
 }
 
