@@ -51,7 +51,6 @@ async function fooposts() {
     void foocomments()
 
 }
-
 void fooposts()
 
 
