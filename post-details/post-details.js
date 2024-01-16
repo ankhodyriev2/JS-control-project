@@ -32,18 +32,18 @@ async function fooposts() {
             const wrap = document.getElementById('wrap');
             const ul = document.createElement('ul');
             const postId = document.createElement('li');
-            const id = document.createElement('li');
+            const commentId = document.createElement('li');
             const name = document.createElement('li');
             const email = document.createElement('li');
             const body = document.createElement('li');
 
             postId.textContent = `postId: ${user.postId}`;
-            id.textContent = `id: ${user.id}`;
+            commentId.textContent = `commentId: ${user.id}`;
             name.textContent = `name: ${user.name}`;
             email.textContent = `email: ${user.email}`;
             body.textContent = `body: ${user.body}`;
 
-            ul.append(postId, id, name, email, body);
+            ul.append(postId, commentId, name, email, body);
             wrap.appendChild(ul);
         }
 
