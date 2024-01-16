@@ -5,8 +5,8 @@
 
 const userId = new URL(location.href).searchParams.get('userId');
 const foo = async () => {
-    const json = await fetch(`https://jsonplaceholder.typicode.com/users/${userId}/posts`);
-    const users = await json.json();
+    const response = await fetch(`https://jsonplaceholder.typicode.com/users/${userId}/posts`);
+    const users = await response.json();
     console.log(users);
 
     const wrap = document.getElementById('wrap');

@@ -21,7 +21,7 @@
 // post-details.html - блок з інфою про пост зверху. Коментарі - по 4 в ряд.
 // Всі елементи котрі характеризують users, posts, comments візуалізувати, так, щоб було видно що це блоки (дати фон. марджини і тд)
 
-const foo = async () => {
+const foouser = async () => {
     const response = await fetch('https://jsonplaceholder.typicode.com/users');
     const users = await response.json();
     console.log(users)
@@ -43,4 +43,4 @@ const foo = async () => {
     }
 }
 
-void foo();
+void foouser();
